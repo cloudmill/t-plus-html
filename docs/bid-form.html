@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Форма подачи заявки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+            </div>
+            <div class="header__search"><a class="header__search-link" href=""><svg class="icon icon--orange">
+                        <use xlink:href="./img/sprite.svg#icon-search" href="./img/sprite.svg#icon-search"></use>
+                    </svg></a></div>
+            <div class="header__burger">
+                <div class="burger"><a class="burger__opener" href=""><span class="burger__line"></span></a></div>
+            </div>
+            <div class="header__burger-content-scroll">
+                <div class="header__burger-content">
+                    <div class="header__burger-hidden header__burger-hidden--main">
+                        <div class="burger">
+                            <div class="burger__top"><a class="burger__close" href="">&#128937;</a></div>
+                            <div class="burger__logo">
+                                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="menu">
+                            <div class="menu__item"><a class="menu__link" href="">Услуги</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">База зананий</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Сотрудники</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Отчеты</a></div>
+                        </div>
+                    </div>
+                    <div class="header__theme">
+                        <div class="theme"><select class="select js-select">
+                                <option class="select__option">Classic</option>
+                                <option class="select__option">Dark Blue</option>
+                                <option class="select__option">Black</option>
+                            </select></div>
+                    </div>
+                    <div class="header__user">
+                        <div class="user">
+                            <div class="user__outer">
+                                <div class="user__box">
+                                    <div class="user__avatar empty" style="background-image: url(./img/content/icons/icon-user.svg)"></div>
+                                    <div class="user__name">Константин Константинов</div><a class="user__opener" href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#icon-arrow-down" href="./img/sprite.svg#icon-arrow-down"></use>
+                                        </svg></a>
+                                </div>
+                                <div class="user__dropdown" id="user-dropdown">
+                                    <div class="user__list">
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои заявки</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Заявки мне</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои данные</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__item main__item--mb-25">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__list">
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></div>
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Раздел</a></div>
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Текущая страница</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-20 main__item--pt-30">
+                <div class="title">
+                    <div class="title__text-box title__text-box--mb-37 title__text-box--pl-138">
+                        <h1 class="title__text title__text--large title__text--m-0 title__text--text-center"> Копия трудовой книжки</h1>
+                        <div class="title__favorites"><a class="link link--with-icon link--black" href=""><span class="link-text">В избранное</span><svg class="icon icon--ligth-dark-grey">
+                                    <use xlink:href="./img/sprite.svg#icon-star-line" href="./img/sprite.svg#icon-star-line"></use>
+                                </svg></a></div>
+                    </div>
+                    <div class="title__description title__description--small">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
+                </div>
+            </div>
+            <div class="main__item">
+                <div class="title title--mb-10">
+                    <h6 class="title__text title__text--extra-small">Автор заявки</h6>
+                </div>
+                <form class="form">
+                    <div class="acco acco--user-data js-acco">
+                        <div class="acco__item acco__item--extra-extra-light-grey" data-mode="opened">
+                            <div class="acco__outer">
+                                <div class="acco__title">Информация об авторе</div>
+                            </div><a class="acco__opener" href=""><svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#icon-arrow-large" href="./img/sprite.svg#icon-arrow-large"></use>
+                                </svg></a>
+                            <div class="acco__content">
+                                <div class="data">
+                                    <div class="data__list">
+                                        <div class="data__item">
+                                            <div class="data__name">ФИО:</div>
+                                            <div class="data__value">Иванов Иван Иванович</div>
+                                        </div>
+                                        <div class="data__item">
+                                            <div class="data__name">Компания:</div>
+                                            <div class="data__value">ПАО “Т ПЛюс”</div>
+                                        </div>
+                                        <div class="data__item">
+                                            <div class="data__name">Филиал:</div>
+                                            <div class="data__value">Свердловский филиал ПАО “Т Плюс”</div>
+                                        </div>
+                                        <div class="data__item">
+                                            <div class="data__name">Подразделение:</div>
+                                            <div class="data__value">Группа оперативных режимов</div>
+                                        </div>
+                                        <div class="data__item">
+                                            <div class="data__name">Должность:</div>
+                                            <div class="data__value"><select class="select select--post js-select select--transparent">
+                                                    <option class="select__option">Менеджер</option>
+                                                    <option class="select__option">Менеджер-2</option>
+                                                    <option class="select__option">Менеджер-3</option>
+                                                </select></div>
+                                        </div>
+                                        <div class="data__item">
+                                            <div class="data__name">Номер мобильный:</div>
+                                            <div class="data__value"><a class="link" href="tel:+7 (967) 633-20-68">+7 (967) 633-20-68</a></div>
+                                        </div>
+                                        <div class="data__item">
+                                            <div class="data__name">Электронная почта:</div>
+                                            <div class="data__value"><a class="link" href="mailto:Aleksey.Systerov@tplusgroup.ru">Aleksey.Systerov@tplusgroup.ru</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__inner">
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Текстовое поле:</div>
+                                </div>
+                                <div class="form__field"><input class="form__input form__input--w-668 form__input--text"></div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Текстовое поле с добавлением новых:</div>
+                                </div>
+                                <div class="form__field-box">
+                                    <div class="form__field-list">
+                                        <div class="form__field"><input class="form__input form__input--w-668 form__input--text"></div>
+                                    </div>
+                                    <div class="form__field-footer"><a class="link link--cGrey link--dashed link--add" href="">Добавить еще</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line form__line--with-counter">
+                                <div class="form__line-box form__line-box--text form__line-box--mr-25">
+                                    <div class="form__name form__name--with-tooltip">
+                                        <div class="form__tooltip">
+                                            <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                        </div>
+                                        <div class="form__name-value">Текстовое поле с количеством:</div>
+                                    </div>
+                                    <div class="form__field"><input class="form__input form__input--w-376 form__input--text"></div>
+                                </div>
+                                <div class="form__line-box form__line-box--counter">
+                                    <div class="form__name form__name--mr-10 form__name--w-auto">
+                                        <div class="form__name-value">Количество:</div>
+                                    </div>
+                                    <div class="form__field"><input class="form__input form__input--w-160 form__input--number"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Текстовое поле большое:</div>
+                                </div>
+                                <div class="form__field"><textarea class="form__textarea form__textarea--w-668"></textarea></div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Выбор даты:</div>
+                                </div>
+                                <div class="form__field form__field--with-icon">
+                                    <div class="form__field-icon"><svg class="icon icon--orange">
+                                            <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                        </svg></div><input class="form__input form__input--date js-datepicker" value="19.05.2020">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Выбор диапазона дат:</div>
+                                </div>
+                                <div class="form__field form__field--datepicker-range form__field--with-icon">
+                                    <div class="datepicker-range">
+                                        <div class="datepicker-range__input-box"><input class="form__input form__input--datepicker-range js-datepicker-range" value="19.05.2020 — 20.05.2020"></div>
+                                        <div class="datepicker-range__inner">
+                                            <div class="datepicker-range__from">
+                                                <div class="datepicker-range__icon"><svg class="icon icon--orange">
+                                                        <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                                    </svg></div>
+                                                <div class="datepicker-range__text">19.05.2020</div>
+                                            </div>
+                                            <div class="datepicker-range__separator">по</div>
+                                            <div class="datepicker-range__to">
+                                                <div class="datepicker-range__text">20.05.2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Выбор времени:</div>
+                                </div>
+                                <div class="form__field form__field--with-icon">
+                                    <div class="form__field-icon"><svg class="icon icon--orange">
+                                            <use xlink:href="./img/sprite.svg#icon-clock" href="./img/sprite.svg#icon-clock"></use>
+                                        </svg></div><input class="form__input form__input--date js-timepicker">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Выбор диапазона времени:</div>
+                                </div>
+                                <div class="form__field form__field--timepicker-range">
+                                    <div class="timepicker-range">
+                                        <div class="timepicker-range__icon"><svg class="icon icon--orange">
+                                                <use xlink:href="./img/sprite.svg#icon-clock" href="./img/sprite.svg#icon-clock"></use>
+                                            </svg></div>
+                                        <div class="timepicker-range__from"><input class="form__input form__input--timepicker-range js-timepicker-range js-timepicker-range-from"></div>
+                                        <div class="timepicker-range__separator">по</div>
+                                        <div class="timepicker-range__to"><input class="form__input form__input--timepicker-range js-timepicker-range js-timepicker-range-to"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Выпадающий список:</div>
+                                </div>
+                                <div class="form__field"><select class="form__select select js-select">
+                                        <option class="select__option">Элемент списка</option>
+                                        <option class="select__option">Элемент списка-2</option>
+                                        <option class="select__option">Элемент списка-3</option>
+                                    </select></div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Выпадающий список:</div>
+                                </div>
+                                <div class="form__field form__field--checkboxes">
+                                    <div class="form__checkboxes">
+                                        <div class="form__checkbox">
+                                            <div class="form__field form__field--normal"><input class="form__input form__input--checkbox" id="checkbox-1" type="checkbox"><label class="form__label" for="checkbox-1"></label><label class="form__input-text" for="checkbox-1">Значение 1</label></div>
+                                        </div>
+                                        <div class="form__checkbox">
+                                            <div class="form__field form__field--normal"><input class="form__input form__input--checkbox" id="checkbox-2" type="checkbox" checked="checked"><label class="form__label" for="checkbox-2"></label><label class="form__input-text" for="checkbox-2">Значение 2</label></div>
+                                        </div>
+                                        <div class="form__checkbox">
+                                            <div class="form__field form__field--normal"><input class="form__input form__input--checkbox" id="checkbox-3" type="checkbox"><label class="form__label" for="checkbox-3"></label><label class="form__input-text" for="checkbox-3">Значение 3</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Радиокнопки:</div>
+                                </div>
+                                <div class="form__field form__field--radios">
+                                    <div class="form__radios">
+                                        <div class="form__radio">
+                                            <div class="form__field form__field--normal"><input class="form__input form__input--radio" id="radio-1" name="radio-q" type="radio" checked="checked"><label class="form__label" for="radio-1"></label><label class="form__input-text" for="radio-1">Да</label></div>
+                                        </div>
+                                        <div class="form__radio">
+                                            <div class="form__field form__field--normal"><input class="form__input form__input--radio" id="radio-2" name="radio-q" type="radio"><label class="form__label" for="radio-2"></label><label class="form__input-text" for="radio-2">Нет</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-42">
+                            <div class="form__line">
+                                <div class="form__name form__name--with-tooltip">
+                                    <div class="form__tooltip">
+                                        <div class="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique volutpat risus, et imperdiet.">?</div>
+                                    </div>
+                                    <div class="form__name-value">Загрузка файла:</div>
+                                </div>
+                                <div class="form__field form__field--files">
+                                    <div class="form__files">
+                                        <div class="form__file">
+                                            <div class="file">
+                                                <div class="file__inner">
+                                                    <div class="file__name"></div>
+                                                    <div class="file__field">
+                                                        <div class="file__input-box"><input class="file__input js-file" type="file" placeholder="Файл не выбран..."></div>
+                                                        <div class="file__btn">Выбор файла</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__file">
+                                            <div class="file">
+                                                <div class="file__inner">
+                                                    <div class="file__name"></div>
+                                                    <div class="file__field">
+                                                        <div class="file__input-box"><input class="file__input js-file" type="file" placeholder="Файл не выбран..."></div>
+                                                        <div class="file__btn">Выбор файла</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__files-footer"><a class="link link--cGrey link--dashed link--add" href="">Добавить еще</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__footer">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange" type="submit" value="Создать заявку"></div>
+                            <div class="form__footer-btn"><a class="button button--white button--min-w-188" href="">Закрыть</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__bar">
+            <div class="footer__bar-list">
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-comments" href="./img/sprite.svg#icon-comments"></use>
+                        </svg></a></div>
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-alert" href="./img/sprite.svg#icon-alert"></use>
+                        </svg>
+                        <div class="footer__bar-count">5</div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                    </div>
+                    <div class="footer__copyright">© ПАО «Т Плюс», 2002—2020</div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__phone-title">Горячая линия:</div>
+                    <div class="footer__phone"><a href="tel:88007000606">8 (800) 700-06-06</a></div>
+                    <div class="footer__email"><a href="mailto:hotline@tplusgroup.ru">hotline@tplusgroup.ru</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="modal mfp-hide" id="review-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Причина отзыва заявки</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отозвать"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="service-evaluation-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Оценка сервиса</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__line form__line--rater">
+                                <div class="form__name form__name--large">Ваша оценка:</div>
+                                <div class="form__field">
+                                    <div class="rater js-rater">
+                                        <div class="rater__box" data-rate-value="4"></div><input class="rater__input" type="hidden" value="4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отправить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="postpone-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Отложить заявку</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Отложить заявку до:</div>
+                            <div class="form__field form__field--with-icon">
+                                <div class="form__field-icon"><svg class="icon icon--orange">
+                                        <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                    </svg></div><input class="form__input form__input--date js-datepicker" value="19.05.2020">
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отложить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>

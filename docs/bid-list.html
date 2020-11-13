@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Список заявок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+            </div>
+            <div class="header__search"><a class="header__search-link" href=""><svg class="icon icon--orange">
+                        <use xlink:href="./img/sprite.svg#icon-search" href="./img/sprite.svg#icon-search"></use>
+                    </svg></a></div>
+            <div class="header__burger">
+                <div class="burger"><a class="burger__opener" href=""><span class="burger__line"></span></a></div>
+            </div>
+            <div class="header__burger-content-scroll">
+                <div class="header__burger-content">
+                    <div class="header__burger-hidden header__burger-hidden--main">
+                        <div class="burger">
+                            <div class="burger__top"><a class="burger__close" href="">&#128937;</a></div>
+                            <div class="burger__logo">
+                                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="menu">
+                            <div class="menu__item"><a class="menu__link" href="">Услуги</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">База зананий</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Сотрудники</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Отчеты</a></div>
+                        </div>
+                    </div>
+                    <div class="header__theme">
+                        <div class="theme"><select class="select js-select">
+                                <option class="select__option">Classic</option>
+                                <option class="select__option">Dark Blue</option>
+                                <option class="select__option">Black</option>
+                            </select></div>
+                    </div>
+                    <div class="header__user">
+                        <div class="user">
+                            <div class="user__outer">
+                                <div class="user__box">
+                                    <div class="user__avatar empty" style="background-image: url(./img/content/icons/icon-user.svg)"></div>
+                                    <div class="user__name">Константин Константинов</div><a class="user__opener" href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#icon-arrow-down" href="./img/sprite.svg#icon-arrow-down"></use>
+                                        </svg></a>
+                                </div>
+                                <div class="user__dropdown" id="user-dropdown">
+                                    <div class="user__list">
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои заявки</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Заявки мне</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои данные</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__item main__item--mb-25">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__list">
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></div>
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Раздел</a></div>
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Текущая страница</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-40 main__item--pt-30">
+                <div class="title">
+                    <h1 class="title__text title__text--large title__text--mt-0 title__text--mb-20 title__text--text-center"> Мои заявки</h1>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-25">
+                <div class="bar">
+                    <div class="bar__list bar__list--centered">
+                        <div class="bar__item"><a class="bar__link active" href="">Все</a></div>
+                        <div class="bar__item"><a class="bar__link" href="">Только мои</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-20">
+                <div class="filter">
+                    <form class="filter__form">
+                        <div class="filter__list">
+                            <div class="filter__item">
+                                <div class="filter__item-name">Активность:</div>
+                                <div class="filter__select"><select class="select js-select">
+                                        <option class="select__option">Текущие</option>
+                                        <option class="select__option">Текущие-2</option>
+                                        <option class="select__option">Текущие-3</option>
+                                    </select></div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-name">Тип заявки:</div>
+                                <div class="filter__select"><select class="select js-select">
+                                        <option class="select__option">Все заявки</option>
+                                        <option class="select__option">Все заявки-2</option>
+                                        <option class="select__option">Все заявки-3</option>
+                                    </select></div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__item-name">Статус:</div>
+                                <div class="filter__select"><select class="select js-select">
+                                        <option class="select__option">Все</option>
+                                        <option class="select__option">Все-2</option>
+                                        <option class="select__option">Все-3</option>
+                                    </select></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-146">
+                <div class="bid">
+                    <div class="bid__table bid__table--mb-70">
+                        <div class="table-wrapper">
+                            <table class="table table--simple">
+                                <thead class="table__thead">
+                                    <th class="table__cell table__cell--head table__cell--head-number">
+                                        <div class="table__col-name">Номер</div><a class="table__sort up" href=""><svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-sort" href="./img/sprite.svg#icon-sort"></use>
+                                            </svg></a>
+                                    </th>
+                                    <th class="table__cell table__cell--head">
+                                        <div class="table__col-name">Тип заявки</div><a class="table__sort" href=""><svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-sort" href="./img/sprite.svg#icon-sort"></use>
+                                            </svg></a>
+                                    </th>
+                                    <th class="table__cell table__cell--head">
+                                        <div class="table__col-name">Исполнитель</div><a class="table__sort" href=""><svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-sort" href="./img/sprite.svg#icon-sort"></use>
+                                            </svg></a>
+                                    </th>
+                                    <th class="table__cell table__cell--head">
+                                        <div class="table__col-name">Дата регистрации</div><a class="table__sort" href=""><svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-sort" href="./img/sprite.svg#icon-sort"></use>
+                                            </svg></a>
+                                    </th>
+                                    <th class="table__cell table__cell--head">
+                                        <div class="table__col-name">Статус</div><a class="table__sort" href=""><svg class="icon">
+                                                <use xlink:href="./img/sprite.svg#icon-sort" href="./img/sprite.svg#icon-sort"></use>
+                                            </svg></a>
+                                    </th>
+                                    <th class="table__cell table__cell--head">
+                                        <div class="table__col-name">Комментарий</div>
+                                    </th>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6645</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Копия трудовой книжки</td>
+                                        <td class="table__cell table__cell--executor table__cell--empty">-</td>
+                                        <td class="table__cell table__cell--date">20.09.2020 15:20</td>
+                                        <td class="table__cell table__cell--status">Новая</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6644</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Справка на визу</td>
+                                        <td class="table__cell table__cell--executor">Иванов И.И.</td>
+                                        <td class="table__cell table__cell--date">18.09.2020 10:00</td>
+                                        <td class="table__cell table__cell--status">В работе</td>
+                                        <td class="table__cell table__cell--comment">Lorem ipsum dolor sit amet, consectetur...</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6643</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Оформление отпуска</td>
+                                        <td class="table__cell table__cell--executor table__cell--empty">-</td>
+                                        <td class="table__cell table__cell--date">18.09.2020 09:50</td>
+                                        <td class="table__cell table__cell--status">Новая</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6642</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Заявка на обучение</td>
+                                        <td class="table__cell table__cell--executor">Васьльев В.В.</td>
+                                        <td class="table__cell table__cell--date">06.09.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">В работе</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6641</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Заявки на автотранспорт</td>
+                                        <td class="table__cell table__cell--executor">Иванов И.И.</td>
+                                        <td class="table__cell table__cell--date">05.09.2020 17:30</td>
+                                        <td class="table__cell table__cell--status">В работе</td>
+                                        <td class="table__cell table__cell--comment">Lorem ipsum dolor sit amet, consectetur...</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6640</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Заявка на обучение</td>
+                                        <td class="table__cell table__cell--executor table__cell--empty">-</td>
+                                        <td class="table__cell table__cell--date">29.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">Согласовано, назначается исполнитель</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6639</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Заявки на автотранспорт </td>
+                                        <td class="table__cell table__cell--executor">Иванов И.И.</td>
+                                        <td class="table__cell table__cell--date">20.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">Завершено</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6638</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Расчётный листок</td>
+                                        <td class="table__cell table__cell--executor">Васьльев В.В.</td>
+                                        <td class="table__cell table__cell--date">19.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">В работе</td>
+                                        <td class="table__cell table__cell--comment">Lorem ipsum dolor sit amet, consectetur...</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6637</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Справка в свободной форме</td>
+                                        <td class="table__cell table__cell--executor">Васьльев В.В.</td>
+                                        <td class="table__cell table__cell--date">19.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">В работе</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6636</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Расчётный листок</td>
+                                        <td class="table__cell table__cell--executor">Васьльев В.В.</td>
+                                        <td class="table__cell table__cell--date">19.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">В работе</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6635</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Справка в свободной форме</td>
+                                        <td class="table__cell table__cell--executor table__cell--empty">-</td>
+                                        <td class="table__cell table__cell--date">19.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">Согласовано, назначается исполнитель</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6634</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Расчётный листок</td>
+                                        <td class="table__cell table__cell--executor">Васьльев В.В.</td>
+                                        <td class="table__cell table__cell--date">19.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">Завершено</td>
+                                        <td class="table__cell table__cell--comment table__cell--empty">-</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__cell table__cell--number">
+                                            <div class="table__more">
+                                                <div class="more js-more">
+                                                    <div class="more__outer"><a class="more__opener" href="javascript:void(0);"><span class="more__opener-dot"></span></a></div>
+                                                    <div class="more__inner">
+                                                        <div class="more__menu"><a class="more__item" href="">Копировать</a><a class="more__item" href="">Отменить</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bid__number">6633</div>
+                                        </td>
+                                        <td class="table__cell table__cell--type">Справка в свободной форме</td>
+                                        <td class="table__cell table__cell--executor">Васьльев В.В.</td>
+                                        <td class="table__cell table__cell--date">19.08.2020 13:21</td>
+                                        <td class="table__cell table__cell--status">Завершено</td>
+                                        <td class="table__cell table__cell--comment">Lorem ipsum dolor sit amet, consectetur...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bid__pagination">
+                        <div class="pagination">
+                            <div class="pagination__inner pagination__inner--centered"><a class="pagination__arrow pagination__arrow--prev disabled" href=""><svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-arrow-left" href="./img/sprite.svg#icon-arrow-left"></use>
+                                    </svg></a>
+                                <div class="pagination__list">
+                                    <div class="pagination__item"><a class="pagination__link" href="">1</a></div>
+                                    <div class="pagination__item"><a class="pagination__link active" href="">2</a></div>
+                                    <div class="pagination__item"><a class="pagination__link" href="">...</a></div>
+                                    <div class="pagination__item"><a class="pagination__link" href="">6</a></div>
+                                    <div class="pagination__item"><a class="pagination__link" href="">7</a></div>
+                                </div><a class="pagination__arrow pagination__arrow--next" href=""><svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-arrow-right" href="./img/sprite.svg#icon-arrow-right"></use>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__bar">
+            <div class="footer__bar-list">
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-comments" href="./img/sprite.svg#icon-comments"></use>
+                        </svg></a></div>
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-alert" href="./img/sprite.svg#icon-alert"></use>
+                        </svg>
+                        <div class="footer__bar-count">5</div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                    </div>
+                    <div class="footer__copyright">© ПАО «Т Плюс», 2002—2020</div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__phone-title">Горячая линия:</div>
+                    <div class="footer__phone"><a href="tel:88007000606">8 (800) 700-06-06</a></div>
+                    <div class="footer__email"><a href="mailto:hotline@tplusgroup.ru">hotline@tplusgroup.ru</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="modal mfp-hide" id="review-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Причина отзыва заявки</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отозвать"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="service-evaluation-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Оценка сервиса</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__line form__line--rater">
+                                <div class="form__name form__name--large">Ваша оценка:</div>
+                                <div class="form__field">
+                                    <div class="rater js-rater">
+                                        <div class="rater__box" data-rate-value="4"></div><input class="rater__input" type="hidden" value="4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отправить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="postpone-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Отложить заявку</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Отложить заявку до:</div>
+                            <div class="form__field form__field--with-icon">
+                                <div class="form__field-icon"><svg class="icon icon--orange">
+                                        <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                    </svg></div><input class="form__input form__input--date js-datepicker" value="19.05.2020">
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отложить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>

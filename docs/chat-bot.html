@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Список заявок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+            </div>
+            <div class="header__search"><a class="header__search-link" href=""><svg class="icon icon--orange">
+                        <use xlink:href="./img/sprite.svg#icon-search" href="./img/sprite.svg#icon-search"></use>
+                    </svg></a></div>
+            <div class="header__burger">
+                <div class="burger"><a class="burger__opener" href=""><span class="burger__line"></span></a></div>
+            </div>
+            <div class="header__burger-content-scroll">
+                <div class="header__burger-content">
+                    <div class="header__burger-hidden header__burger-hidden--main">
+                        <div class="burger">
+                            <div class="burger__top"><a class="burger__close" href="">&#128937;</a></div>
+                            <div class="burger__logo">
+                                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="menu">
+                            <div class="menu__item"><a class="menu__link" href="">Услуги</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">База зананий</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Сотрудники</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Отчеты</a></div>
+                        </div>
+                    </div>
+                    <div class="header__theme">
+                        <div class="theme"><select class="select js-select">
+                                <option class="select__option">Classic</option>
+                                <option class="select__option">Dark Blue</option>
+                                <option class="select__option">Black</option>
+                            </select></div>
+                    </div>
+                    <div class="header__user">
+                        <div class="user">
+                            <div class="user__outer">
+                                <div class="user__box">
+                                    <div class="user__avatar empty" style="background-image: url(./img/content/icons/icon-user.svg)"></div>
+                                    <div class="user__name">Константин Константинов</div><a class="user__opener" href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#icon-arrow-down" href="./img/sprite.svg#icon-arrow-down"></use>
+                                        </svg></a>
+                                </div>
+                                <div class="user__dropdown" id="user-dropdown">
+                                    <div class="user__list">
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои заявки</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Заявки мне</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои данные</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__item main__item--centered">
+                <div class="chat-bot js-chat-bot">
+                    <div class="chat-bot__title">Ваш помощник</div>
+                    <div class="chat-bot__content">
+                        <div class="chat-bot__question chat-bot__question--main">
+                            <div class="chat-bot__question-text">Для быстрого доступа к заявкам выберите одно из следующих действий:</div>
+                            <div class="chat-bot__options">
+                                <div class="chat-bot__option">Подать новую заявку</div>
+                                <div class="chat-bot__option">Узнать статус заявки</div>
+                                <div class="chat-bot__option">Добавить комментарий по заявке</div>
+                            </div>
+                        </div>
+                        <div class="chat-bot__answer">
+                            <div class="chat-bot__answer-text">Подать новую заявку</div>
+                        </div>
+                        <div class="chat-bot__question">
+                            <div class="chat-bot__question-text">Опишите ваш запрос, используя ключевые слова или выберите вариант ниже. Примеры популярных запросов:</div>
+                            <div class="chat-bot__options">
+                                <div class="chat-bot__option">Копия трудового договора</div>
+                                <div class="chat-bot__option">Ошибка доступа в систему</div>
+                                <div class="chat-bot__option">Ремонт кофемашины</div>
+                                <div class="chat-bot__option">Установка, обновление ПО</div>
+                                <div class="chat-bot__option">Изменение полномочий</div>
+                            </div>
+                        </div>
+                        <div class="chat-bot__answer">
+                            <div class="chat-bot__answer-text">Копия договора</div>
+                        </div>
+                        <div class="chat-bot__question">
+                            <div class="chat-bot__question-text">По вашему запросу найдено несколько вариантов:</div>
+                            <div class="chat-bot__options">
+                                <div class="chat-bot__option">Копия трудового договора</div>
+                                <div class="chat-bot__option">Копия трудовой книжки</div>
+                            </div>
+                        </div>
+                        <div class="chat-bot__question chat-bot__question--main">
+                            <div class="chat-bot__question-text">Для быстрого доступа к заявкам выберите одно из следующих действий:</div>
+                            <div class="chat-bot__options">
+                                <div class="chat-bot__option">Подать новую заявку</div>
+                                <div class="chat-bot__option">Узнать статус заявки</div>
+                                <div class="chat-bot__option">Добавить комментарий по заявке</div>
+                            </div>
+                        </div>
+                        <div class="chat-bot__answer">
+                            <div class="chat-bot__answer-text">Узнать статус заявки</div>
+                        </div>
+                        <div class="chat-bot__question">
+                            <div class="chat-bot__question-text">Введите номер заявки</div>
+                        </div>
+                        <div class="chat-bot__answer">
+                            <div class="chat-bot__answer-text">6645</div>
+                        </div>
+                        <div class="chat-bot__question">Статус заявки #6654: <b class="text-blue">В работе</b> <br> Чтобы подробнее ознакомиться с деталями заявки перейдите по ссылке <a href="">Копия трудовой книжки #6645.</a></div>
+                        <div class="chat-bot__question chat-bot__question--main">
+                            <div class="chat-bot__question-text">Для быстрого доступа к заявкам выберите одно из следующих действий:</div>
+                            <div class="chat-bot__options">
+                                <div class="chat-bot__option">Подать новую заявку</div>
+                                <div class="chat-bot__option">Узнать статус заявки</div>
+                                <div class="chat-bot__option">Добавить комментарий по заявке</div>
+                            </div>
+                        </div>
+                        <div class="chat-bot__answer">
+                            <div class="chat-bot__answer-text">Добавить комментарий</div>
+                        </div>
+                        <div class="chat-bot__question">
+                            <div class="chat-bot__question-text">Введите номер заявки</div>
+                        </div>
+                        <div class="chat-bot__answer">
+                            <div class="chat-bot__answer-text">6645</div>
+                        </div>
+                        <div class="chat-bot__question">Введите Ваш комментарий - будет автоматически добавлен к заявке. Для отмены введите команду: <span class="text-blue">/отмена</span></div>
+                        <div class="chat-bot__answer">
+                            <div class="chat-bot__answer-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tinciduniculum.</div>
+                        </div>
+                        <div class="chat-bot__question">Комментарий добавлен. Чтобы подробнее ознакомиться с деталями заявки перейдите по ссылке <a href="">Копия трудовой книжки #6645.</a></div>
+                    </div>
+                    <div class="chat-bot__footer">
+                        <div class="chat-bot__form">
+                            <form class="form">
+                                <div class="chat-bot__ipnut-box"><input class="chat-bot__input" type="text" placeholder="Введите текст"></div><a class="chat-bot__menu-opener" href=""><svg class="icon icon--menu-hide">
+                                        <use xlink:href="./img/sprite.svg#icon-menu" href="./img/sprite.svg#icon-menu"></use>
+                                    </svg><svg class="icon icon--menu-show">
+                                        <use xlink:href="./img/sprite.svg#icon-arrow-back" href="./img/sprite.svg#icon-arrow-back"></use>
+                                    </svg></a>
+                                <div class="chat-bot__submit-box"><input class="button button--grey" type="submit"></div>
+                            </form>
+                        </div>
+                        <div class="chat-bot__menu">
+                            <div class="chat-bot__menu-list">
+                                <div class="chat-bot__menu-item"><a class="button button--dark-blue" href="">Меню</a></div>
+                                <div class="chat-bot__menu-item"><a class="button button--light-blue" href="">Справка</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__bar">
+            <div class="footer__bar-list">
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-comments" href="./img/sprite.svg#icon-comments"></use>
+                        </svg></a></div>
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-alert" href="./img/sprite.svg#icon-alert"></use>
+                        </svg>
+                        <div class="footer__bar-count">5</div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                    </div>
+                    <div class="footer__copyright">© ПАО «Т Плюс», 2002—2020</div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__phone-title">Горячая линия:</div>
+                    <div class="footer__phone"><a href="tel:88007000606">8 (800) 700-06-06</a></div>
+                    <div class="footer__email"><a href="mailto:hotline@tplusgroup.ru">hotline@tplusgroup.ru</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="modal mfp-hide" id="review-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Причина отзыва заявки</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отозвать"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="service-evaluation-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Оценка сервиса</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__line form__line--rater">
+                                <div class="form__name form__name--large">Ваша оценка:</div>
+                                <div class="form__field">
+                                    <div class="rater js-rater">
+                                        <div class="rater__box" data-rate-value="4"></div><input class="rater__input" type="hidden" value="4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отправить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="postpone-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Отложить заявку</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Отложить заявку до:</div>
+                            <div class="form__field form__field--with-icon">
+                                <div class="form__field-icon"><svg class="icon icon--orange">
+                                        <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                    </svg></div><input class="form__input form__input--date js-datepicker" value="19.05.2020">
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отложить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>

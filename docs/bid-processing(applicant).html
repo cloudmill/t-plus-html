@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Форма подачи заявки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+            </div>
+            <div class="header__search"><a class="header__search-link" href=""><svg class="icon icon--orange">
+                        <use xlink:href="./img/sprite.svg#icon-search" href="./img/sprite.svg#icon-search"></use>
+                    </svg></a></div>
+            <div class="header__burger">
+                <div class="burger"><a class="burger__opener" href=""><span class="burger__line"></span></a></div>
+            </div>
+            <div class="header__burger-content-scroll">
+                <div class="header__burger-content">
+                    <div class="header__burger-hidden header__burger-hidden--main">
+                        <div class="burger">
+                            <div class="burger__top"><a class="burger__close" href="">&#128937;</a></div>
+                            <div class="burger__logo">
+                                <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="menu">
+                            <div class="menu__item"><a class="menu__link" href="">Услуги</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">База зананий</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Сотрудники</a></div>
+                            <div class="menu__item"><a class="menu__link" href="">Отчеты</a></div>
+                        </div>
+                    </div>
+                    <div class="header__theme">
+                        <div class="theme"><select class="select js-select">
+                                <option class="select__option">Classic</option>
+                                <option class="select__option">Dark Blue</option>
+                                <option class="select__option">Black</option>
+                            </select></div>
+                    </div>
+                    <div class="header__user">
+                        <div class="user">
+                            <div class="user__outer">
+                                <div class="user__box">
+                                    <div class="user__avatar empty" style="background-image: url(./img/content/icons/icon-user.svg)"></div>
+                                    <div class="user__name">Константин Константинов</div><a class="user__opener" href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#icon-arrow-down" href="./img/sprite.svg#icon-arrow-down"></use>
+                                        </svg></a>
+                                </div>
+                                <div class="user__dropdown" id="user-dropdown">
+                                    <div class="user__list">
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои заявки</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Заявки мне</a></div>
+                                        <div class="user__item"><a class="button button--w-100p" href="">Мои данные</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__item main__item--mb-25">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__list">
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная</a></div>
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Раздел</a></div>
+                        <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Текущая страница</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-40 main__item--pt-30">
+                <div class="title">
+                    <h1 class="title__text title__text--large title__text--mt-0 title__text--mb-20 title__text--text-center"> Копия трудовой книжки #6645</h1>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-56">
+                <div class="title title--mb-10">
+                    <h6 class="title__text title__text--extra-small">Автор заявки</h6>
+                </div>
+                <div class="acco acco--user-data js-acco">
+                    <div class="acco__item acco__item--extra-extra-light-grey" data-mode="opened">
+                        <div class="acco__outer">
+                            <div class="acco__title">Информация об авторе</div>
+                        </div><a class="acco__opener" href=""><svg class="icon">
+                                <use xlink:href="./img/sprite.svg#icon-arrow-large" href="./img/sprite.svg#icon-arrow-large"></use>
+                            </svg></a>
+                        <div class="acco__content">
+                            <div class="data">
+                                <div class="data__list">
+                                    <div class="data__item">
+                                        <div class="data__name">ФИО:</div>
+                                        <div class="data__value">Иванов Иван Иванович</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Компания:</div>
+                                        <div class="data__value">ПАО “Т ПЛюс”</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Филиал:</div>
+                                        <div class="data__value">Свердловский филиал ПАО “Т Плюс”</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Подразделение:</div>
+                                        <div class="data__value">Группа оперативных режимов</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Должность:</div>
+                                        <div class="data__value">Менеджер</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Номер мобильный:</div>
+                                        <div class="data__value"><a class="link" href="tel:+7 (967) 633-20-68">+7 (967) 633-20-68</a></div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Электронная почта:</div>
+                                        <div class="data__value"><a class="link" href="mailto:Aleksey.Systerov@tplusgroup.ru">Aleksey.Systerov@tplusgroup.ru</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bid bid--with-aside">
+                    <div class="bid__main">
+                        <div class="bid__data">
+                            <div class="data data--simple">
+                                <div class="data__list">
+                                    <div class="data__item">
+                                        <div class="data__name">Поле заявки:</div>
+                                        <div class="data__value">Значение 1</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Поле заявки:</div>
+                                        <div class="data__value">Значение 2</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Поле заявки:</div>
+                                        <div class="data__value">Значение 3</div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Вложенные файлы:</div>
+                                        <div class="data__value">
+                                            <div class="data__file"><a class="link" href="">File_name.docx</a></div>
+                                            <div class="data__file"><a class="link" href="">File_name.docx</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="data__item">
+                                        <div class="data__name">Текстовое поле большое:</div>
+                                        <div class="data__value">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget pellentesque magna, at finibus nisl. Proin ullamcorper gravida tellus eget finibus. In nisi dui, vestibulum ac scelerisque vestibulum, lobortis vitae eros. Vivamus vulputate ipsum eget sem efficitur dapibus. Nullam suscipit mi ligula, ut congue nunc laoreet quis. Morbi cursus feugiat iaculis. Aliquam pharetra ante mollis enim aliquam semper.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid__footer">
+                            <div class="bid__footer-btns">
+                                <div class="bid__footer-btn"><a class="button button--orange button--min-w-188" href="">Редактировать</a></div>
+                                <div class="bid__footer-btn"><a class="button button--min-w-188 js-modal-opener" href="#review-bid-modal">Отозвать</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bid__aside">
+                        <div class="aside">
+                            <div class="aside__item">
+                                <div class="aside__item-title">В работе</div>
+                                <div class="aside__item-main">
+                                    <div class="aside__item-data">
+                                        <div class="data data--small">
+                                            <div class="data__list">
+                                                <div class="data__item">
+                                                    <div class="data__name">Дата регистрации</div>
+                                                    <div class="data__value">20.09.2020 15:20</div>
+                                                </div>
+                                                <div class="data__item">
+                                                    <div class="data__name">Плановая дата завершения</div>
+                                                    <div class="data__value">23.09.2020 15:20</div>
+                                                </div>
+                                                <div class="data__item">
+                                                    <div class="data__name">Исполнитель</div>
+                                                    <div class="data__value"><a class="link" href="">Иванов И.И.</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__item main__item--mb-70">
+                <div class="title title--simple">
+                    <div class="title__text title__text--grey">Комментарии</div>
+                </div>
+                <div class="comments">
+                    <div class="comments__list">
+                        <div class="comments__item">
+                            <div class="comments__item-top">
+                                <div class="comments__user">
+                                    <div class="user">
+                                        <div class="user__avatar empty" style="background-image: url(./img/content/icons/icon-user.svg)"></div>
+                                        <div class="user__name">Иванов Иван</div>
+                                    </div>
+                                </div>
+                                <div class="comments__date">19.05.2019 19:00</div>
+                            </div>
+                            <div class="comments__content">
+                                <div class="comments__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</div>
+                            </div>
+                        </div>
+                        <div class="comments__item">
+                            <div class="comments__item-top">
+                                <div class="comments__user">
+                                    <div class="user">
+                                        <div class="user__avatar empty" style="background-image: url(./img/content/icons/icon-user.svg)"></div>
+                                        <div class="user__name">Константин Константинов</div>
+                                    </div>
+                                </div>
+                                <div class="comments__date">19.05.2019 19:00</div>
+                            </div>
+                            <div class="comments__content">
+                                <div class="comments__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </div>
+                            </div>
+                        </div>
+                        <div class="comments__item">
+                            <div class="comments__item-top">
+                                <div class="comments__user">
+                                    <div class="user">
+                                        <div class="user__avatar empty" style="background-image: url(./img/content/icons/icon-user.svg)"></div>
+                                        <div class="user__name">Иванов Иван</div>
+                                    </div>
+                                </div>
+                                <div class="comments__date">19.05.2019 19:00</div>
+                            </div>
+                            <div class="comments__content">
+                                <div class="comments__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</div>
+                                <div class="comments__files">
+                                    <div class="comments__files-title">Файлы:</div>
+                                    <div class="comments__files-list">
+                                        <div class="comments__file"><a class="link" href="">Наименование_файла.docx</a></div>
+                                        <div class="comments__file"><a class="link" href="">Наименование_файла(2).docx</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__pagination">
+                        <div class="pagination">
+                            <div class="pagination__inner pagination__inner--centered"><a class="pagination__arrow pagination__arrow--prev disabled" href=""><svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-arrow-left" href="./img/sprite.svg#icon-arrow-left"></use>
+                                    </svg></a>
+                                <div class="pagination__list">
+                                    <div class="pagination__item"><a class="pagination__link" href="">1</a></div>
+                                    <div class="pagination__item"><a class="pagination__link active" href="">2</a></div>
+                                    <div class="pagination__item"><a class="pagination__link" href="">...</a></div>
+                                    <div class="pagination__item"><a class="pagination__link" href="">6</a></div>
+                                    <div class="pagination__item"><a class="pagination__link" href="">7</a></div>
+                                </div><a class="pagination__arrow pagination__arrow--next" href=""><svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#icon-arrow-right" href="./img/sprite.svg#icon-arrow-right"></use>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__new">
+                        <div class="comments__form">
+                            <form class="form">
+                                <div class="form__inner">
+                                    <div class="form__item form__item--mb-36">
+                                        <div class="form__name form__name--fz-16 form__name--large">Комментарий:</div>
+                                        <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                                    </div>
+                                    <div class="form__item form__item--mb-36">
+                                        <div class="form__line">
+                                            <div class="form__name form__name--fz-16 form__name--large">Загрузка файла:</div>
+                                            <div class="form__field form__field--files">
+                                                <div class="form__files">
+                                                    <div class="form__file">
+                                                        <div class="file">
+                                                            <div class="file__inner">
+                                                                <div class="file__name"></div>
+                                                                <div class="file__field">
+                                                                    <div class="file__input-box"><input class="file__input js-file" type="file" placeholder="Файл не выбран..."></div>
+                                                                    <div class="file__btn">Выбор файла</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form__files-footer"><a class="link link--fz-13 link--cGrey link--dashed link--add" href="">Добавить еще</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__footer">
+                                    <div class="form__footer-btns">
+                                        <div class="form__footer-btn"><button class="button button--fz-15 button--min-w-243 button--orange" type="submit">Отправить</button></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__bar">
+            <div class="footer__bar-list">
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-comments" href="./img/sprite.svg#icon-comments"></use>
+                        </svg></a></div>
+                <div class="footer__bar-item"><a class="footer__bar-link" href=""><svg class="icon icon--extra-light-grey">
+                            <use xlink:href="./img/sprite.svg#icon-alert" href="./img/sprite.svg#icon-alert"></use>
+                        </svg>
+                        <div class="footer__bar-count">5</div>
+                    </a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <div class="logo"><a class="logo__img-box" href=""><img class="logo__img" src="./img/content/logo.png"></a></div>
+                    </div>
+                    <div class="footer__copyright">© ПАО «Т Плюс», 2002—2020</div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__phone-title">Горячая линия:</div>
+                    <div class="footer__phone"><a href="tel:88007000606">8 (800) 700-06-06</a></div>
+                    <div class="footer__email"><a href="mailto:hotline@tplusgroup.ru">hotline@tplusgroup.ru</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="modal mfp-hide" id="review-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Причина отзыва заявки</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отозвать"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="service-evaluation-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Оценка сервиса</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item">
+                            <div class="form__line form__line--rater">
+                                <div class="form__name form__name--large">Ваша оценка:</div>
+                                <div class="form__field">
+                                    <div class="rater js-rater">
+                                        <div class="rater__box" data-rate-value="4"></div><input class="rater__input" type="hidden" value="4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отправить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal mfp-hide" id="postpone-bid-modal"><a class="modal__closer js-modal-closer" href="">&#128937;</a>
+        <div class="modal__inner">
+            <div class="modal__title">Отложить заявку</div>
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__inner">
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Отложить заявку до:</div>
+                            <div class="form__field form__field--with-icon">
+                                <div class="form__field-icon"><svg class="icon icon--orange">
+                                        <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                    </svg></div><input class="form__input form__input--date js-datepicker" value="19.05.2020">
+                            </div>
+                        </div>
+                        <div class="form__item form__item--mb-17">
+                            <div class="form__name form__name--large">Комментарий:</div>
+                            <div class="form__field"><textarea class="form__textarea"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="form__footer form__footer--modal">
+                        <div class="form__footer-btns">
+                            <div class="form__footer-btn"><input class="button button--orange button--min-w-296" type="submit" value="Отложить"></div>
+                            <div class="form__footer-btn"><a class="button button--min-w-150 js-modal-closer" href="">Отмена</a></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
