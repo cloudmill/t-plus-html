@@ -115,6 +115,67 @@
                             <div class="form__line form__line--mb-32 form__line--jc-sb">
                                 <div class="form__item form__item--w-1of2">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
+                                        <div class="form__name-value">Период создания:</div>
+                                    </div>
+                                    <div class="form__field form__field--datepicker-range form__field--with-icon">
+                                        <div class="datepicker-range">
+                                            <div class="datepicker-range__input-box"><input class="form__input form__input--datepicker-range js-datepicker-range" value="19.05.2020 — 20.06.2020"></div>
+                                            <div class="datepicker-range__inner">
+                                                <div class="datepicker-range__from">
+                                                    <div class="datepicker-range__icon"><svg class="icon icon--orange">
+                                                            <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                                        </svg></div>
+                                                    <div class="datepicker-range__text">19.05.2020</div>
+                                                </div>
+                                                <div class="datepicker-range__separator">по</div>
+                                                <div class="datepicker-range__to">
+                                                    <div class="datepicker-range__text">20.06.2020</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__item form__item--w-1of2">
+                                    <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
+                                        <div class="form__name-value">Период исполнения:</div>
+                                    </div>
+                                    <div class="form__field form__field--datepicker-range form__field--with-icon">
+                                        <div class="datepicker-range">
+                                            <div class="datepicker-range__input-box"><input class="form__input form__input--datepicker-range js-datepicker-range" value="19.05.2020 — 20.06.2020"></div>
+                                            <div class="datepicker-range__inner">
+                                                <div class="datepicker-range__from">
+                                                    <div class="datepicker-range__icon"><svg class="icon icon--orange">
+                                                            <use xlink:href="./img/sprite.svg#icon-date" href="./img/sprite.svg#icon-date"></use>
+                                                        </svg></div>
+                                                    <div class="datepicker-range__text datepicker-range__text--text-center">от</div>
+                                                </div>
+                                                <div class="datepicker-range__separator">-</div>
+                                                <div class="datepicker-range__to">
+                                                    <div class="datepicker-range__text datepicker-range__text--text-center">до</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__line form__line--mb-32 form__line--jc-sb">
+                                <div class="form__item form__item--w-1of2">
+                                    <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
+                                        <div class="form__name-value">Подразделение:</div>
+                                    </div>
+                                    <div class="form__field"><select class="form__select select js-select">
+                                            <option class="select__option">Департамент подразделений отделов</option>
+                                            <option class="select__option">Департамент подразделений отделов-2</option>
+                                            <option class="select__option">Департамент подразделений отделов-3</option>
+                                        </select></div>
+                                </div>
+                                <div class="form__item form__item--w-1of2 form__item--ai-c">
+                                    <div class="form__field"><input class="form__input form__input--checkbox" id="checkbox-1" type="checkbox" checked><label class="form__label" for="checkbox-1"></label><label class="form__input-text form__input-text--extra-small form__input-text--default" for="checkbox-1">С учетом нижестоящих подразделений</label></div>
+                                </div>
+                            </div>
+                            <div class="form__line form__line--mb-32 form__line--jc-sb">
+                                <div class="form__item form__item--w-1of2">
+                                    <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Регион:</div>
                                     </div>
                                     <div class="form__field"><select class="form__select select js-select">
@@ -140,7 +201,7 @@
                                         <div class="form__name-value">Заявитель:</div>
                                     </div>
                                     <div class="form__field"><select class="form__select select js-select">
-                                            <option class="select__option"> <img src="./img/content/avatar.jpg">Валентина Петрова</option>
+                                            <option class="select__option">Валентина Петрова</option>
                                             <option class="select__option">Валентина Петрова-2</option>
                                             <option class="select__option">Валентина Петрова-3</option>
                                         </select></div>
