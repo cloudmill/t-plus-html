@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
-    <title>Результаты поиска</title>
+    <title>Конструктор отчетов</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
 </head>
@@ -81,17 +81,19 @@
                     </div>
                 </div>
             </div>
-            <div class="main__item main__item--mb-56">
+            <div class="main__item main__item--mb-50">
                 <div class="title">
-                    <h1 class="title__text title__text--large title__text--m-0 title__text--text-center"> Конструктор отчетов</h1>
+                    <div class="title__text-box">
+                        <h1 class="title__text title__text--m-0 title__text--large title__text--text-center"> Конструктор отчетов</h1>
+                    </div>
                 </div>
             </div>
             <div class="main__item">
-                <form class="form">
-                    <div class="form__line form__line--jc-sb">
-                        <div class="form__item form__item--w-2of3">
-                            <div class="form__line form__line--mb-32 form__line--jc-sb">
-                                <div class="form__item form__item--w-1of2">
+                <form class="form" action="">
+                    <div class="form__row form__row--desktop">
+                        <div class="form__col form__col--fg--1">
+                            <div class="form__row form__row--mobile form__row--jc--sb">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Категория заявки:</div>
                                     </div>
@@ -101,7 +103,7 @@
                                             <option class="select__option">Заявки HR-3</option>
                                         </select></div>
                                 </div>
-                                <div class="form__item form__item--w-1of2">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Тип заявки:</div>
                                     </div>
@@ -112,12 +114,12 @@
                                         </select></div>
                                 </div>
                             </div>
-                            <div class="form__line form__line--mb-32 form__line--jc-sb">
-                                <div class="form__item form__item--w-1of2">
+                            <div class="form__row form__row--mobile form__row--jc--sb">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Период создания:</div>
                                     </div>
-                                    <div class="form__field form__field--datepicker-range form__field--with-icon">
+                                    <div class="form__field form__field--w--100p form__field--datepicker-range form__field--with-icon">
                                         <div class="datepicker-range">
                                             <div class="datepicker-range__input-box"><input class="form__input form__input--datepicker-range js-datepicker-range" value="19.05.2020 — 20.06.2020"></div>
                                             <div class="datepicker-range__inner">
@@ -135,11 +137,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form__item form__item--w-1of2">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Период исполнения:</div>
                                     </div>
-                                    <div class="form__field form__field--datepicker-range form__field--with-icon">
+                                    <div class="form__field form__field--w--100p form__field--datepicker-range form__field--with-icon">
                                         <div class="datepicker-range">
                                             <div class="datepicker-range__input-box"><input class="form__input form__input--datepicker-range js-datepicker-range" value="19.05.2020 — 20.06.2020"></div>
                                             <div class="datepicker-range__inner">
@@ -158,8 +160,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form__line form__line--mb-32 form__line--jc-sb">
-                                <div class="form__item form__item--w-1of2">
+                            <div class="form__row form__row--mobile form__row--jc--sb">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Подразделение:</div>
                                     </div>
@@ -169,12 +171,15 @@
                                             <option class="select__option">Департамент подразделений отделов-3</option>
                                         </select></div>
                                 </div>
-                                <div class="form__item form__item--w-1of2 form__item--ai-c">
+                                <div class="form__col form__col--w--50p">
+                                    <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p form__name--no-mobile">
+                                        <div class="form__name-value"><br></div>
+                                    </div>
                                     <div class="form__field"><input class="form__input form__input--checkbox" id="checkbox-1" type="checkbox" checked><label class="form__label" for="checkbox-1"></label><label class="form__input-text form__input-text--extra-small form__input-text--default" for="checkbox-1">С учетом нижестоящих подразделений</label></div>
                                 </div>
                             </div>
-                            <div class="form__line form__line--mb-32 form__line--jc-sb">
-                                <div class="form__item form__item--w-1of2">
+                            <div class="form__row form__row--mobile form__row--jc--sb">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Регион:</div>
                                     </div>
@@ -184,7 +189,7 @@
                                             <option class="select__option">Заявки HR-3</option>
                                         </select></div>
                                 </div>
-                                <div class="form__item form__item--w-1of2">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Тип заявки:</div>
                                     </div>
@@ -195,30 +200,30 @@
                                         </select></div>
                                 </div>
                             </div>
-                            <div class="form__line form__line--mb-32 form__line--jc-sb">
-                                <div class="form__item form__item--w-1of2">
+                            <div class="form__row form__row--mobile form__row--jc--sb">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Заявитель:</div>
                                     </div>
                                     <div class="form__field"><select class="form__select select js-select">
-                                            <option class="select__option">Валентина Петрова</option>
-                                            <option class="select__option">Валентина Петрова-2</option>
-                                            <option class="select__option">Валентина Петрова-3</option>
+                                            <option class="select__option" data-image="avatar-1.png">Валентина Петрова</option>
+                                            <option class="select__option" data-image="avatar-1.png">Валентина Петрова-2</option>
+                                            <option class="select__option" data-image="avatar-1.png">Валентина Петрова-3</option>
                                         </select></div>
                                 </div>
-                                <div class="form__item form__item--w-1of2">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Исполнитель (сотрудник):</div>
                                     </div>
                                     <div class="form__field"><select class="form__select select js-select">
-                                            <option class="select__option">Валентин Петров</option>
-                                            <option class="select__option">Валентин Петров-2</option>
-                                            <option class="select__option">Валентин Петров-3</option>
+                                            <option class="select__option" data-image="avatar-2.png">Валентин Петров</option>
+                                            <option class="select__option" data-image="avatar-2.png">Валентин Петров-2</option>
+                                            <option class="select__option" data-image="avatar-2.png">Валентин Петров-3</option>
                                         </select></div>
                                 </div>
                             </div>
-                            <div class="form__line form__line--jc-sb">
-                                <div class="form__item form__item--w-1of2">
+                            <div class="form__row form__row--mobile form__row--jc--sb">
+                                <div class="form__col form__col--w--50p">
                                     <div class="form__name form__name--mr-0 form__name--mb-13 form__name--w-100p">
                                         <div class="form__name-value">Исполнитель (роль):</div>
                                     </div>
@@ -230,62 +235,58 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form__item form__item--w-1of3 form__item--p-relative">
-                            <div class="form__item form__item--mb-17 form__item--frame">
+                        <div class="form__col form__col--w--30p form__col--fs--0 form__col--ml--140 form__col--pos--rel">
+                            <div class="form__frame">
                                 <div class="title title--mb-10">
-                                    <h6 class="title__text title__text--small">Генерация отчета</h6>
+                                    <h6 class="title__text title__text--small title__text--text-center">Генерация отчета</h6>
                                 </div>
-                                <div class="form__name form__name--w-100p form__name--mb-8">
+                                <div class="form__name form__name--w-100p form__name--mb--10">
                                     <div class="form__name-value form__name-value--text-center">Выберите тип отчета</div>
                                 </div>
-                                <div class="form__field form__field--mb-22"><select class="form__select select js-select">
+                                <div class="form__field form__field--mb--20"><select class="form__select select js-select">
                                         <option class="select__option">Отчет по заявкам</option>
                                         <option class="select__option">Отчет по заявкам-2</option>
                                         <option class="select__option">Отчет по заявкам-3</option>
-                                    </select></div><input class="button button--w-100p button--orange" type="submit" value="Создать и скачать">
+                                    </select></div><button class="button button--w-100p button--orange" type="submit">Создать и скачать</button>
                             </div>
-                            <div class="form__item form__item--frame">
+                            <div class="form__frame">
                                 <div class="title title--mb-10">
-                                    <h6 class="title__text title__text--small">Создание рассылки</h6>
+                                    <h6 class="title__text title__text--small title__text--text-center">Создание рассылки</h6>
                                 </div>
-                                <div class="form__name form__name--w-100p form__name--mb-8">
+                                <div class="form__name form__name--w-100p form__name--mb--10">
                                     <div class="form__name-value form__name-value--text-center">Выберите тип отчета</div>
                                 </div>
-                                <div class="form__field form__field--mb-22"><select class="form__select select js-select">
+                                <div class="form__field form__field--mb--10"><select class="form__select select js-select">
                                         <option class="select__option">Отчет по заявкам</option>
                                         <option class="select__option">Отчет по заявкам-2</option>
                                         <option class="select__option">Отчет по заявкам-3</option>
                                     </select></div>
-                                <div class="form__name form__name--w-100p form__name--mb-8">
+                                <div class="form__name form__name--w-100p form__name--mb--10">
                                     <div class="form__name-value form__name-value--text-center">Периодичность отправки</div>
                                 </div>
-                                <div class="form__field form__field--mb-22"><select class="form__select select js-select">
+                                <div class="form__field form__field--mb--10"><select class="form__select select js-select">
                                         <option class="select__option">Раз в неделю (выбрать день)</option>
                                         <option class="select__option">Раз в неделю (выбрать день)-2</option>
                                         <option class="select__option">Раз в неделю (выбрать день)-3</option>
                                     </select></div>
-                                <div class="form__name form__name--w-100p form__name--mb-8">
+                                <div class="form__name form__name--w-100p form__name--mb--10">
                                     <div class="form__name-value form__name-value--text-center">День отправки</div>
                                 </div>
-                                <div class="form__field form__field--mb-22"><select class="form__select select js-select">
+                                <div class="form__field form__field--mb--10"><select class="form__select select js-select">
                                         <option class="select__option">Понедельник, 10:00</option>
                                         <option class="select__option">Понедельник, 10:00-2</option>
                                         <option class="select__option">Понедельник, 10:00-3</option>
                                     </select></div>
-                                <div class="form__name form__name--w-100p form__name--mb-8">
+                                <div class="form__name form__name--w-100p form__name--mb--10">
                                     <div class="form__name-value form__name-value--text-center">Кому</div>
                                 </div>
-                                <div class="form__field form__field--mb-22"><select class="form__select select js-select">
+                                <div class="form__field form__field--mb--20"><select class="form__select select js-select">
                                         <option class="select__option">Себе</option>
                                         <option class="select__option">Себе-2</option>
                                         <option class="select__option">Себе-3</option>
-                                    </select></div><input class="button button--w-100p button--orange" type="submit" value="Сохранить рассылку">
+                                    </select></div><button class="button button--w-100p button--orange" type="submit">Сохранить рассылку</button>
                             </div>
-                            <div class="form__item form__item--max-w-430 form__item--mt-20 form__item--tooltip form__item--frame form__item--with-arrow">
-                                <div class="form__name form__name--w-100p form__name--mb-30">
-                                    <div class="form__name-value form__name-value--fw-normal">Созданные рассылки можно отменить в Вашем профиле.</div>
-                                </div><a class="button button--orange" href>Перейти в профиль</a>
-                            </div>
+                            <div class="form__frame form__frame--tooltip"><p class="form__frame-text form__frame-text--mb--30">Созданные рассылки можно отменить в Вашем профиле.</p><a class="button button--w-100p button--orange" href="">Перейти в профиль</a></div>
                         </div>
                     </div>
                 </form>
